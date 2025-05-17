@@ -43,7 +43,12 @@ A real-time video analytics and surveillance system designed to enhance women's 
 
 ## 📷 Screenshots
 
-> _Add screenshots or GIFs of your UI, alerts, and map here_
+![WhatsApp Image 2025-04-18 at 17 36 05_c667eebe](https://github.com/user-attachments/assets/4694faf4-abc6-418d-a6e4-79d9b421356d)
+![WhatsApp Image 2025-04-18 at 17 36 24_3c906635](https://github.com/user-attachments/assets/67872029-db55-40c7-8fe4-ad64fb42118d)
+![WhatsApp Image 2025-04-18 at 17 42 35_147eecf0](https://github.com/user-attachments/assets/e2be36ec-4e97-4e4d-a4ed-4c29f8ad0158)
+![WhatsApp Image 2025-04-18 at 17 43 05_e3bfa9ed](https://github.com/user-attachments/assets/6123cd10-c0af-4948-b09c-aa457e0c5e67)
+
+
 
 ## 🚀 Installation
 
