@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bcec20721ea59832961abb1cdede41b3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bcec20721ea59832961abb1cdede41b3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bcec20721ea59832961abb1cdede41b3 = L.map(
+                "map_bcec20721ea59832961abb1cdede41b3",
+                {
+                    center: [17.9375095, 78.211745],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bd7f507cba0a89f36fc75b9ddc4c31f1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bd7f507cba0a89f36fc75b9ddc4c31f1.addTo(map_bcec20721ea59832961abb1cdede41b3);
+        
+    
+            var marker_bf6755b0771af3d5e84b87bf6964112f = L.marker(
+                [17.9375095, 78.211745],
+                {}
+            ).addTo(map_bcec20721ea59832961abb1cdede41b3);
+        
+    
+            var icon_f13a812c86778d1aed46af3c75797bb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bf6755b0771af3d5e84b87bf6964112f.setIcon(icon_f13a812c86778d1aed46af3c75797bb8);
+        
+    
+        var popup_a7977012b8f55fdd762830877cf72d45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d54ba583f931fc05e86cd73dc4b2500b = $(`<div id="html_d54ba583f931fc05e86cd73dc4b2500b" style="width: 100.0%; height: 100.0%;">Your Location</div>`)[0];
+                popup_a7977012b8f55fdd762830877cf72d45.setContent(html_d54ba583f931fc05e86cd73dc4b2500b);
+            
+        
+
+        marker_bf6755b0771af3d5e84b87bf6964112f.bindPopup(popup_a7977012b8f55fdd762830877cf72d45)
+        ;
+
+        
+    
+    
+            var circle_marker_bae76cfa782cfbb5a07c23391a1576b6 = L.circleMarker(
+                [18.04531, 78.26078],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_bcec20721ea59832961abb1cdede41b3);
+        
+    
+        var popup_6dad7e971f32020d85613909652c76af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd370f88fc0b5de4b675d1110842b1ea = $(`<div id="html_cd370f88fc0b5de4b675d1110842b1ea" style="width: 100.0%; height: 100.0%;">MEDAK, ANDHRA PRADESH<br>Risk Level: High<br>Crimes: 622<br>Distance: 13.01 km</div>`)[0];
+                popup_6dad7e971f32020d85613909652c76af.setContent(html_cd370f88fc0b5de4b675d1110842b1ea);
+            
+        
+
+        circle_marker_bae76cfa782cfbb5a07c23391a1576b6.bindPopup(popup_6dad7e971f32020d85613909652c76af)
+        ;
+
+        
+    
+    
+            var circle_marker_bd20048507a33ff71612e4416044303d = L.circleMarker(
+                [17.38405, 78.45636],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_bcec20721ea59832961abb1cdede41b3);
+        
+    
+        var popup_90e725b5d3bf18bbfb16b803d2ae4bd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b74b823cf3d19a2ece7d3f5070157d1 = $(`<div id="html_6b74b823cf3d19a2ece7d3f5070157d1" style="width: 100.0%; height: 100.0%;">HYDERABAD CITY, ANDHRA PRADESH<br>Risk Level: High<br>Crimes: 1373<br>Distance: 66.53 km</div>`)[0];
+                popup_90e725b5d3bf18bbfb16b803d2ae4bd6.setContent(html_6b74b823cf3d19a2ece7d3f5070157d1);
+            
+        
+
+        circle_marker_bd20048507a33ff71612e4416044303d.bindPopup(popup_90e725b5d3bf18bbfb16b803d2ae4bd6)
+        ;
+
+        
+    
+</script>
+</html>

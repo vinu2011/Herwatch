@@ -1,0 +1,7 @@
+path: C:/Users/ramag/OneDrive/Desktop/Gender classification/Gender-Detection/dataset  # Adjust this path to your dataset folder
+train: train/images  # Folder for training images
+val: valid/images    # Folder for validation images
+test: test/images    # (Optional) Folder for test images
+
+nc: 1  # Number of classes (if detecting only SOS gestures)
+names: ["SOS Gesture"]  # Class names

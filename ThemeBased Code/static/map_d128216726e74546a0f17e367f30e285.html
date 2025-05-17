@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_98adb1f86e75e37050971df369652ffa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_98adb1f86e75e37050971df369652ffa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_98adb1f86e75e37050971df369652ffa = L.map(
+                "map_98adb1f86e75e37050971df369652ffa",
+                {
+                    center: [27.05901115, 84.20646375475478],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4c2a26cc5c8ce51f344bad50ecc943f3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4c2a26cc5c8ce51f344bad50ecc943f3.addTo(map_98adb1f86e75e37050971df369652ffa);
+        
+    
+            var marker_d0ac6d8d54469a9a06770f00c6cfeb18 = L.marker(
+                [27.05901115, 84.20646375475478],
+                {}
+            ).addTo(map_98adb1f86e75e37050971df369652ffa);
+        
+    
+            var icon_f9ba2a2c0a6ee5d0c02e7772b3f4508a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d0ac6d8d54469a9a06770f00c6cfeb18.setIcon(icon_f9ba2a2c0a6ee5d0c02e7772b3f4508a);
+        
+    
+        var popup_5af2e1baa5325da52bac24ef5e2947ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69dda52c23a33a9751f1e15c267b31d4 = $(`<div id="html_69dda52c23a33a9751f1e15c267b31d4" style="width: 100.0%; height: 100.0%;">Your Location</div>`)[0];
+                popup_5af2e1baa5325da52bac24ef5e2947ce.setContent(html_69dda52c23a33a9751f1e15c267b31d4);
+            
+        
+
+        marker_d0ac6d8d54469a9a06770f00c6cfeb18.bindPopup(popup_5af2e1baa5325da52bac24ef5e2947ce)
+        ;
+
+        
+    
+    
+            var circle_marker_fff811b5b2b6978a5543363eca4bc920 = L.circleMarker(
+                [27.0590111, 84.2064638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_98adb1f86e75e37050971df369652ffa);
+        
+    
+        var popup_ace1a4caeb333bc640de9531406730a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bbe8015a87d9cae1cdd95c77c82af0f = $(`<div id="html_2bbe8015a87d9cae1cdd95c77c82af0f" style="width: 100.0%; height: 100.0%;">BAGAHA, BIHAR<br>Risk Level: High<br>Crimes: 269<br>Distance: 0.0 km</div>`)[0];
+                popup_ace1a4caeb333bc640de9531406730a5.setContent(html_2bbe8015a87d9cae1cdd95c77c82af0f);
+            
+        
+
+        circle_marker_fff811b5b2b6978a5543363eca4bc920.bindPopup(popup_ace1a4caeb333bc640de9531406730a5)
+        ;
+
+        
+    
+    
+            var circle_marker_862a9b5af55afc003a337a344d074373 = L.circleMarker(
+                [26.8023, 84.5074],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_98adb1f86e75e37050971df369652ffa);
+        
+    
+        var popup_bc474158707183015a792f7507a80ec6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_127a554c36962293fa019b3fe65c4db0 = $(`<div id="html_127a554c36962293fa019b3fe65c4db0" style="width: 100.0%; height: 100.0%;">BETTIAH, BIHAR<br>Risk Level: High<br>Crimes: 377<br>Distance: 41.26 km</div>`)[0];
+                popup_bc474158707183015a792f7507a80ec6.setContent(html_127a554c36962293fa019b3fe65c4db0);
+            
+        
+
+        circle_marker_862a9b5af55afc003a337a344d074373.bindPopup(popup_bc474158707183015a792f7507a80ec6)
+        ;
+
+        
+    
+    
+            var circle_marker_d557adcf8500f1b9263f68d0b1f4fcf4 = L.circleMarker(
+                [26.4211166, 84.3739133],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_98adb1f86e75e37050971df369652ffa);
+        
+    
+        var popup_afcc4fc6f64700b6e126510f64e13d41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f24ae20160684c1f569b388c904e92f7 = $(`<div id="html_f24ae20160684c1f569b388c904e92f7" style="width: 100.0%; height: 100.0%;">GOPALGANJ, BIHAR<br>Risk Level: High<br>Crimes: 522<br>Distance: 72.61 km</div>`)[0];
+                popup_afcc4fc6f64700b6e126510f64e13d41.setContent(html_f24ae20160684c1f569b388c904e92f7);
+            
+        
+
+        circle_marker_d557adcf8500f1b9263f68d0b1f4fcf4.bindPopup(popup_afcc4fc6f64700b6e126510f64e13d41)
+        ;
+
+        
+    
+    
+            var circle_marker_16fa5bacae7caa05b9aef51d23b02020 = L.circleMarker(
+                [26.6506888, 84.9114654],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_98adb1f86e75e37050971df369652ffa);
+        
+    
+        var popup_6b9cf0a98ba8f0a4b34bbdd2a8db20c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6877b52b527864e29047171c6b1cbeb = $(`<div id="html_c6877b52b527864e29047171c6b1cbeb" style="width: 100.0%; height: 100.0%;">MOTIHARI, BIHAR<br>Risk Level: High<br>Crimes: 588<br>Distance: 83.4 km</div>`)[0];
+                popup_6b9cf0a98ba8f0a4b34bbdd2a8db20c9.setContent(html_c6877b52b527864e29047171c6b1cbeb);
+            
+        
+
+        circle_marker_16fa5bacae7caa05b9aef51d23b02020.bindPopup(popup_6b9cf0a98ba8f0a4b34bbdd2a8db20c9)
+        ;
+
+        
+    
+</script>
+</html>

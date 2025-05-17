@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8d2a19c9de723496056d91bce122525 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a8d2a19c9de723496056d91bce122525" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8d2a19c9de723496056d91bce122525 = L.map(
+                "map_a8d2a19c9de723496056d91bce122525",
+                {
+                    center: [17.5112192, 78.512128],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1bbe2b3ce52140ef93f13c81d912e346 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1bbe2b3ce52140ef93f13c81d912e346.addTo(map_a8d2a19c9de723496056d91bce122525);
+        
+    
+            var marker_777e3aefc6e6ddf61ba4a1a4170ced89 = L.marker(
+                [17.5112192, 78.512128],
+                {}
+            ).addTo(map_a8d2a19c9de723496056d91bce122525);
+        
+    
+            var icon_0782f1524d0a03c6ea99715d530ffb50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_777e3aefc6e6ddf61ba4a1a4170ced89.setIcon(icon_0782f1524d0a03c6ea99715d530ffb50);
+        
+    
+        var popup_2834b04ecbeacec6ce125e3fb46688c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ee71ee4f6e478b5aa0b899092a16679 = $(`<div id="html_2ee71ee4f6e478b5aa0b899092a16679" style="width: 100.0%; height: 100.0%;">Your Location</div>`)[0];
+                popup_2834b04ecbeacec6ce125e3fb46688c8.setContent(html_2ee71ee4f6e478b5aa0b899092a16679);
+            
+        
+
+        marker_777e3aefc6e6ddf61ba4a1a4170ced89.bindPopup(popup_2834b04ecbeacec6ce125e3fb46688c8)
+        ;
+
+        
+    
+    
+            var circle_marker_20a1367fdb18233dbc1200d25aa7e36f = L.circleMarker(
+                [17.38405, 78.45636],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_a8d2a19c9de723496056d91bce122525);
+        
+    
+        var popup_0ef02eb04a7033218cc72f122b99fdfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a488fbc74452636dfbf6aa4773e168d3 = $(`<div id="html_a488fbc74452636dfbf6aa4773e168d3" style="width: 100.0%; height: 100.0%;">HYDERABAD CITY, ANDHRA PRADESH<br>Risk Level: High<br>Crimes: 1373<br>Distance: 15.27 km</div>`)[0];
+                popup_0ef02eb04a7033218cc72f122b99fdfe.setContent(html_a488fbc74452636dfbf6aa4773e168d3);
+            
+        
+
+        circle_marker_20a1367fdb18233dbc1200d25aa7e36f.bindPopup(popup_0ef02eb04a7033218cc72f122b99fdfe)
+        ;
+
+        
+    
+    
+            var circle_marker_0b73e8decbfe3f96f138d31924e07704 = L.circleMarker(
+                [18.04531, 78.26078],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_a8d2a19c9de723496056d91bce122525);
+        
+    
+        var popup_e88d55842e094c527f0df0cf34e18e82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_894112b7fd3bd27b88255c2457ba015a = $(`<div id="html_894112b7fd3bd27b88255c2457ba015a" style="width: 100.0%; height: 100.0%;">MEDAK, ANDHRA PRADESH<br>Risk Level: High<br>Crimes: 622<br>Distance: 64.84 km</div>`)[0];
+                popup_e88d55842e094c527f0df0cf34e18e82.setContent(html_894112b7fd3bd27b88255c2457ba015a);
+            
+        
+
+        circle_marker_0b73e8decbfe3f96f138d31924e07704.bindPopup(popup_e88d55842e094c527f0df0cf34e18e82)
+        ;
+
+        
+    
+    
+            var circle_marker_d300ac472792d6470b9d25f7d1cf02b1 = L.circleMarker(
+                [17.05439, 79.26707],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_a8d2a19c9de723496056d91bce122525);
+        
+    
+        var popup_8a1883fa533f18f97700d18d3b0dc8c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f5e1157bb5b8ad0e0f909ded587a6bf = $(`<div id="html_5f5e1157bb5b8ad0e0f909ded587a6bf" style="width: 100.0%; height: 100.0%;">NALGONDA, ANDHRA PRADESH<br>Risk Level: High<br>Crimes: 798<br>Distance: 94.86 km</div>`)[0];
+                popup_8a1883fa533f18f97700d18d3b0dc8c2.setContent(html_5f5e1157bb5b8ad0e0f909ded587a6bf);
+            
+        
+
+        circle_marker_d300ac472792d6470b9d25f7d1cf02b1.bindPopup(popup_8a1883fa533f18f97700d18d3b0dc8c2)
+        ;
+
+        
+    
+</script>
+</html>
